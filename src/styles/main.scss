@@ -1,0 +1,37 @@
+@import "bootstrap";
+@import "fonts";
+@import "fontawesomeNew";
+@import "animate";
+@import "variables";
+
+@import "rd-navbar";
+@import "to-top";
+
+@import "header";
+
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+body {
+  font-family: $fontMedium;
+  font-size: $default-font-size;
+  color: $color-dark;
+  background-color: $color-white;
+}
+
+ul {
+  margin-bottom: 0;
+}
+ol, ul {
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+@import "mediaqueries";
