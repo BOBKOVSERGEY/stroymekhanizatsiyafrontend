@@ -94,5 +94,29 @@ $(function () {
     }
   }
 
+  var swiperAnimation = new SwiperAnimation();
+  var mySwiper = new Swiper('.swiper-slider', {
+    //loop: true,
+    speed: 600,
+    effect: 'fade',
+    /*autoplay: {
+      delay: 6000,
+    },*/
+    on: {
+      init: function () {
+        swiperAnimation.init(this).animate();
+      },
+      slideChange: function () {
+        swiperAnimation.init(this).animate();
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
+
 
 })

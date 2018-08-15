@@ -1,0 +1,15 @@
+.about {
+  padding: 64px 0;
+  &__text {
+    font-family: $fontMedium;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .about {
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+}

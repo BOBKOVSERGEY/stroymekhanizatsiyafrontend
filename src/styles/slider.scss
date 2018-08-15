@@ -1,0 +1,31 @@
+.slider {
+  &__heading {
+    font-family: $fontBold;
+    font-size: 60px;
+    color: $color-white;
+    margin-bottom: 40px;
+  }
+  &__description {
+    font-family: $fontLight;
+    font-size: 19px;
+  }
+  &__btn {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .slider {
+    text-align: center;
+    &__heading {
+      font-size: 45px;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .slider {
+    &__heading {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.btn {
+  &--big {
+    font-family: $fontBold;
+    padding: 14px 39px;
+    font-size: 18px;
+    border-radius: 0;
+    border-width: 2px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+
+  }
+  &--stone {
+    color: #fff;
+    background-color: #152e44;
+    border-color: #152e44;
+    transition: all .3s ease;
+    &:hover {
+      color: #fff;
+      background-color: transparent;
+      border-color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .btn {
+    &--big {
+      font-size: 16px;
+    }
+  }
+}
