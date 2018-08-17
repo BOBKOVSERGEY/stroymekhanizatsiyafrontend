@@ -50,6 +50,34 @@
     & span {
 
     }
+  }
+}
 
+@media only screen and (max-width : 768px) {
+  .price {
+    &__table-heading {
+      transform: skew(25deg);
+      & span {
+        transform: skew(-25deg);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .price {
+    &__table {
+      padding: 0;
+    }
+    &__table-heading {
+      transform: skew(0deg);
+      font-size: 10px;
+      & span {
+        transform: skew(0deg);
+      }
+    }
+    &__table-text {
+      font-size: 10px;
+    }
   }
 }
