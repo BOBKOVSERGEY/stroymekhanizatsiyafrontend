@@ -1,0 +1,20 @@
+.footer {
+  font-family: $fontLight;
+  padding: 30px;
+  background: $color-dark-blue;
+  color: $color-white;
+  &__link-logo {
+    margin-left: auto;
+  }
+}
+.logo-sd {
+  display: flex;
+  align-items: center;
+  & img {
+    width: 42px;
+    margin-right: 10px;
+  }
+  &__text {
+    color: $color-white;
+  }
+}

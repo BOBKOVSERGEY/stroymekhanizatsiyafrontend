@@ -11,12 +11,13 @@ var userAgent = navigator.userAgent.toLowerCase(),
   isIEBrows = navigator.appVersion.indexOf("MSIE") != -1 || navigator.appVersion.indexOf('Trident/') > 0,
   isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
   isTouch = "ontouchstart" in window,
-  $year = $("#copyright-year"),
   $document = $(document),
   plugins = {
     pointerEvents: isIE && isIE < 11 ? 'js/pointer-events.min.js' : false,
     navbar: $('.rd-navbar'),
     customWaypoints: $('[data-custom-scroll-to]'),
+    googleMap: $('#google-map'),
+
 
   },
   i = 0;
@@ -118,5 +119,38 @@ $(function () {
 
 
 
+  if (plugins.googleMap.length) {
+    plugins.googleMap.googleMap({
+      styles: [{
+        "featureType": "landscape",
+        "stylers": [{"hue": "#FFBB00"}, {"saturation": 43.400000000000006}, {"lightness": 37.599999999999994}, {"gamma": 1}]
+      }, {
+        "featureType": "road.highway",
+        "stylers": [{"hue": "#FFC200"}, {"saturation": -61.8}, {"lightness": 45.599999999999994}, {"gamma": 1}]
+      }, {
+        "featureType": "road.arterial",
+        "stylers": [{"hue": "#FF0300"}, {"saturation": -100}, {"lightness": 51.19999999999999}, {"gamma": 1}]
+      }, {
+        "featureType": "road.local",
+        "stylers": [{"hue": "#FF0300"}, {"saturation": -100}, {"lightness": 52}, {"gamma": 1}]
+      }, {
+        "featureType": "water",
+        "stylers": [{"hue": "#0078FF"}, {"saturation": -13.200000000000003}, {"lightness": 2.4000000000000057}, {"gamma": 1}]
+      }, {
+        "featureType": "poi",
+        "stylers": [{"hue": "#00FF6A"}, {"saturation": -1.0989010989011234}, {"lightness": 11.200000000000017}, {"gamma": 1}]
+      }]
+    });
+  }
+
+  /**
+   * year copyright
+   */
+  var now = new Date();
+  var getYear = now.getFullYear();
+  var elCopyrightYear = document.getElementById('copyright-year');
+  if (elCopyrightYear) {
+    elCopyrightYear.innerHTML = getYear;
+  }
 
 })

@@ -11,8 +11,8 @@
   }
   &--stone {
     color: #fff;
-    background-color: #152e44;
-    border-color: #152e44;
+    background-color: $color-dark-blue;
+    border-color: $color-dark-blue;
     transition: all .3s ease;
     &:hover {
       color: #fff;

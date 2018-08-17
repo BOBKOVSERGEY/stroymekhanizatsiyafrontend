@@ -66,9 +66,9 @@
                 <li><a href="#">Expand your Opportunities</a></li>
               </ul>-->
             </li>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">Как мы работаем</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#" data-custom-scroll-to="price">Цены</a></li>
+            <li><a href="#" data-custom-scroll-to="how-we-work">Как мы работаем</a></li>
+            <li><a href="#" data-custom-scroll-to="contacts">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -84,7 +84,7 @@
               <div class="col-lg-8">
                 <h2 class="slider__heading">Грузоперевозки фурами по России</h2>
                 <p class="slider__description">Закажите грузоперевозку фурой 20 тонн в надежной компании по экономным ценам. Доставка различных грузов и продукции большегрузами выполняется по всей России.</p>
-                <div class="slider__btn">
+                <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
                   <a href="#" class="btn btn--big btn--stone">Оставить заявку</a>
                 </div>
               </div>
@@ -100,7 +100,7 @@
               <div class="col-lg-8">
                 <h2 class="slider__heading">Грузоперевозки фурами по России</h2>
                 <p class="slider__description">Закажите грузоперевозку фурой 20 тонн в надежной компании по экономным ценам. Доставка различных грузов и продукции большегрузами выполняется по всей России.</p>
-                <div class="slider__btn">
+                <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
                   <a href="#" class="btn btn--big btn--stone">Оставить заявку</a>
                 </div>
               </div>
@@ -116,7 +116,7 @@
               <div class="col-lg-8">
                 <h2 class="slider__heading">Грузоперевозки фурами по России</h2>
                 <p class="slider__description">Закажите грузоперевозку фурой 20 тонн в надежной компании по экономным ценам. Доставка различных грузов и продукции большегрузами выполняется по всей России.</p>
-                <div class="slider__btn">
+                <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
                   <a href="#" class="btn btn--big btn--stone">Оставить заявку</a>
                 </div>
               </div>
@@ -148,7 +148,7 @@
   <div class="container">
     <h2 class="heading-primary heading-primary--white heading-primary--index text-center">Преимущества</h2>
     <div class="advantages__content">
-      <div class="advantages__item wow slideInLeft" data-wow-duration="2s">
+      <div class="advantages__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".05s">
         <div class="advantages__item-img">
           <img src="dist/images/truck.svg" alt="">
         </div>
@@ -156,7 +156,7 @@
           1. Собственный автопарк
         </div>
       </div>
-      <div class="advantages__item">
+      <div class="advantages__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".1s">
         <div class="advantages__item-img">
           <img src="dist/images/new.svg" alt="">
         </div>
@@ -164,7 +164,7 @@
           2. Тягачи и полуприцепы не старше 2017 года
         </div>
       </div>
-      <div class="advantages__item">
+      <div class="advantages__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".15s">
         <div class="advantages__item-img">
           <img src="dist/images/russia.svg" alt="">
         </div>
@@ -172,7 +172,7 @@
           3. Перевозка грузов по всей России
         </div>
       </div>
-      <div class="advantages__item">
+      <div class="advantages__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".2s">
         <div class="advantages__item-img">
           <img src="dist/images/communication.svg" alt="">
         </div>
@@ -180,7 +180,7 @@
           4. Спутниковый мониторинг нахождения автотранспорта
         </div>
       </div>
-      <div class="advantages__item">
+      <div class="advantages__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".25s">
         <div class="advantages__item-img">
           <img src="dist/images/discount.svg" alt="">
         </div>
@@ -188,7 +188,7 @@
           5. Гибкое ценообразование, фиксированная цена
         </div>
       </div>
-      <div class="advantages__item">
+      <div class="advantages__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s">
         <div class="advantages__item-img">
           <img src="dist/images/box.svg" alt="">
         </div>
@@ -196,12 +196,225 @@
           6. Любой груз застрахован*
         </div>
       </div>
-      <p class="advantages__offer">*В соответствии со ст. 6 Федерального закона от 25.04.2002 N 40-ФЗ «Об обязательном страховании гражданской ответственности владельцев транспортных средств.»</p>
+      <p class="advantages__offer wow slideInUp" data-wow-duration="1s" data-wow-delay=".35s">*В соответствии со ст. 6 Федерального закона от 25.04.2002 N 40-ФЗ «Об обязательном страховании гражданской ответственности владельцев транспортных средств.»</p>
     </div>
  </div>
   <div class="advantages__overlay"></div>
 </section>
+<section class="price" id="price">
+  <div class="container">
+    <h2 class="heading-primary text-center">Цены</h2>
+    <div class="price__table-wrapper">
+      <div class="price__table">
+        <div class="price__table-row">
+          <div class="price__table-column">
+            <div class="price__table-heading"><span>Отправление</span></div>
+          </div>
+          <div class="price__table-column">
+            <div class="price__table-heading"><span>Назначение</span></div>
+          </div>
+          <div class="price__table-column">
+            <div class="price__table-heading"><span>Стоимость,руб</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".05s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Омск</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>160 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".1s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Омск</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>90 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".15s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Екатеринбург</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>94 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".2s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Екатеринбург</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>60 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".25s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Волгоград</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>50 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".3s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Волгоград</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>40 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".35s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Тамбов</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>30 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".4s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Тамбов</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>25 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".45s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Самара</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>50 000</span></div>
+        </div>
+      </div>
+      <div class="price__table-row price__table-row--bg wow fadeInDown" data-wow-delay=".5s">
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Самара</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>Москва</span></div>
+        </div>
+        <div class="price__table-column price__table-column--text">
+          <div class="price__table-text"><span>30 000</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="how-we-work" id="how-we-work">
+  <div class="container">
+    <h2 class="heading-primary heading-primary--white heading-primary--index text-center">Как мы работаем</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="how-we-work__content">
+          <div class="how-we-work__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".05s">
+            <div class="how-we-work__item-img">
+              <img src="dist/images/resume.svg" alt="">
+            </div>
+            <div class="how-we-work__item-text">
+              1. Заявка
+            </div>
+          </div>
+          <div class="how-we-work__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+            <div class="how-we-work__item-img">
+              <img src="dist/images/calculator-four-buttons-outlines.svg" alt="">
+            </div>
+            <div class="how-we-work__item-text">
+              2. Коммерческое предложение
+            </div>
+          </div>
+          <div class="how-we-work__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".15s">
+            <div class="how-we-work__item-img">
+              <img src="dist/images/delivery-truck.svg" alt="">
+            </div>
+            <div class="how-we-work__item-text">
+              3. Перевозка
+            </div>
+          </div>
+          <div class="how-we-work__item wow slideInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+            <div class="how-we-work__item-img">
+              <img src="dist/images/credit-card.svg" alt="">
+            </div>
+            <div class="how-we-work__item-text">
+              4. Оплата
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="how-we-work__overlay"></div>
+</section>
+<section class="contacts" id="contacts">
+  <div id="google-map" data-zoom="14" data-x="37.547187" data-y="55.662425" class="rd-google-map__model"></div>
+  <ul class="rd-google-map__locations">
+    <li data-x="37.547187" data-y="55.662425">
+      <h5>ООО «СТРОЙМЕХАНИЗАЦИЯ»</h5>
+      <address class="contact-info">
+        <p>117420, Россия, г. Москва, ул. Профсоюзная, дом 57, 5 этаж, офис 507</p>
+        <dl>
+          <dd><a href="tel:+74950250238">8 (495) 025-02-38</a></dd>
+          <dd><a href="mailto:info@stroymekhanizatsiya.ru">info@stroymekhanizatsiya.ru</a></dd>
+        </dl>
+        <dl>
+          <dd><span>Время работы:<br>
+            С понедельника по четверг с 09:00 до 18:00;<br>
+            в пятницу с 09:00 до 17:00.</span></dd>
+        </dl>
+      </address>
+    </li>
+  </ul>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-9">
+        © <span id="copyright-year">2018</span>  ООО "СТРОЙМЕХАНИЗАЦИЯ"
+      </div>
+      <div class="col-md-3 d-flex">
+        <a href="#" class="footer__link-logo">
+          <div class="logo-sd">
+            <div><img src="dist/images/mylogo.svg" alt=""></div>
+            <div class="logo-sd__text">Разработка ЭСДИ</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="dist/js/lib.js"></script>
+<script src="//maps.google.com/maps/api/js?key=AIzaSyAbF547wmpRHA68yKJP62H7yha2Nzsilm8&language=ru"></script>
 <script src="dist/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+.price {
+  padding: 64px 0;
+  &__table {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  &__table-wrapper {
+    min-height: .01%;
+    overflow-x: auto;
+  }
+  &__table-row {
+    display: flex;
+    justify-content: space-between;
+    &:not(:first-child) {
+      &:hover {
+        background: #f3f3f3;
+      }
+    }
+    &--bg {
+      &:nth-of-type(odd) {
+        background: #F8F8F8;
+        &:hover {
+          background: #f3f3f3;
+        }
+      }
+    }
+  }
+  &__table-column {
+    flex: 1 1 30%;
+    text-align: center;
+    padding: 0 4px;
+    &--text {
+      padding: 15px 0;
+    }
+  }
+  &__table-heading {
+    display: inline-block;
+    padding: 15px 5px;
+    background: $color-dark-blue;
+    color: #fff;
+    transform: skew(45deg);
+    width: 100%;
+    & span {
+      display: inline-block;
+      transform: skew(-45deg);
+    }
+  }
+  &__table-text {
+    & span {
+
+    }
+
+  }
+}
