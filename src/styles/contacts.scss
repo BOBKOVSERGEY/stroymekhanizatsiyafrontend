@@ -1,5 +1,18 @@
 .contacts {
   position: relative;
+  overflow: hidden;
+  padding-top: 64px;
+  /*&__overlay {
+    background: rgba($color-blue-red, .85);
+    transform: skewX(-31deg);
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 5000px;
+    height: 100%;
+    z-index: 2;
+    left: 66%;
+  }*/
 }
 
 .rd-google-map {
