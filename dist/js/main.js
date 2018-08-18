@@ -100,9 +100,9 @@ $(function () {
     //loop: true,
     speed: 600,
     effect: 'fade',
-    /*autoplay: {
-      delay: 6000,
-    },*/
+    autoplay: {
+      delay: 5000,
+    },
     on: {
       init: function () {
         swiperAnimation.init(this).animate();
