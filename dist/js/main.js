@@ -153,4 +153,86 @@ $(function () {
     elCopyrightYear.innerHTML = getYear;
   }
 
+  /*become */
+  var becomeSupplierBtn = $('.become-supplier-btn');
+  becomeSupplierBtn.on('click', function (e) {
+    e.preventDefault();
+    var becomeSupplierBlock = $('.become-supplier');
+    becomeSupplierBlock.toggle();
+    var
+      top = $("#become").offset().top;
+
+   $('body,html').animate({scrollTop: top}, 1500);
+  })
+  /*end become */
+
+
+  /*** policy ***/
+  $('.js-policy').on('click', function($el){
+    checkPolicy();
+  });
+  /*** end policy ***/
+  function checkPolicy () {
+    if ($(".js-policy").is(':checked')) {
+      $("[type=submit]").prop('disabled', false);
+    } else {
+      $("[type=submit]").prop('disabled', true);
+    }
+  };
+
+  /*validate contacts-form__form*/
+  $('.content-form__form').validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      }
+
+    },
+    messages: {
+      name: {
+        required: "Введите Ваше имя"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес"
+      }
+    }
+  });
+
+
+
 })
+
+/*******inputfile******/
+
+var inputs = document.querySelectorAll( '.inputfile' );
+Array.prototype.forEach.call( inputs, function( input )
+{
+  var label	 = input.nextElementSibling,
+    labelVal = label.innerHTML;
+
+  input.addEventListener( 'change', function( e )
+  {
+    var fileName = '';
+    if( this.files && this.files.length > 1 )
+      fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+    else
+      fileName = e.target.value.split( '\\' ).pop();
+
+    if( fileName )
+      label.querySelector( 'span' ).innerHTML = fileName;
+    else
+      label.innerHTML = labelVal;
+  });
+});
+
+/*******end inputfile******/
+
+
+
+
+

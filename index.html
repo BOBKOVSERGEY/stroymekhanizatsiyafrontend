@@ -117,7 +117,7 @@
                 <h2 class="slider__heading">Приглашаем к сотрудничеству</h2>
                 <p class="slider__description">Мы приглашаем к долгосрочному, взаимовыгодному сотрудничеству грузоотправителей.</p>
                 <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
-                  <a href="#" class="btn btn--big btn--stone">Стать поставщиком</a>
+                  <a href="#" class="btn btn--big btn--stone become-supplier-btn">Стать поставщиком</a>
                 </div>
               </div>
             </div>
@@ -377,35 +377,86 @@
   <div class="how-we-work__overlay"></div>
 </section>
 <section class="contacts" id="contacts">
-  <div class="contacts__overlay"></div>
-  <h2 class="heading-primary text-center">Контакты</h2>
   <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <p>ООО "СТРОЙМЕХАНИЗАЦИЯ"</p>
+    <div class="col-md-7 contacts__order-one col-sm-12">
+      <div class="rd-google-map">
+        <div id="google-map" data-zoom="14" data-x="37.547187" data-y="55.662425" class="rd-google-map__model"></div>
+        <ul class="rd-google-map__locations">
+          <li data-x="37.547187" data-y="55.662425">
+            <h5>ООО «СТРОЙМЕХАНИЗАЦИЯ»</h5>
+            <address class="contact-info">
+              <p>117420, Россия, г. Москва, ул. Профсоюзная, дом 57, 5 этаж, офис 507</p>
+              <dl>
+                <dd><a href="tel:+74950250238">8 (495) 025-02-38</a></dd>
+                <dd><a href="mailto:info@stroymekhanizatsiya.ru">info@stroymekhanizatsiya.ru</a></dd>
+              </dl>
+              <dl>
+                <dd><span>Время работы:<br>
+              С понедельника по четверг с 09:00 до 18:00;<br>
+              в пятницу с 09:00 до 17:00.</span></dd>
+              </dl>
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-5 col-sm-12 d-flex align-items-center contacts__order-two">
+      <div class="contacts__info">
+        <h2 class="heading-primary text-center contacts__heading">Контакты</h2>
+        <p>ООО "СТРОЙМЕХАНИЗАЦИЯ"</p>
+        <p>ИНН/КПП 7728378680/772801001</p>
+        <p>117420, Россия, г. Москва, ул. Профсоюзная, дом 57, офис 507</p>
+        <p>Тел./Факс: <a href="tel:+74950250238">8 (495) 025-02-38</a></p>
+        <p>E-mail: <a href="mailto:info@stroymekhanizatsiya.ru">info@stroymekhanizatsiya.ru</a></p>
+        <div class="contacts__info-btn">
+          <a href="#" class="btn btn--big btn--stone btn--hover-blue become-supplier-btn" id="become-supplier">Стать поставщиком</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div id="google-map" data-zoom="14" data-x="37.547187" data-y="55.662425" class="rd-google-map__model"></div>
-  <ul class="rd-google-map__locations">
-    <li data-x="37.547187" data-y="55.662425">
-      <h5>ООО «СТРОЙМЕХАНИЗАЦИЯ»</h5>
-      <address class="contact-info">
-        <p>117420, Россия, г. Москва, ул. Профсоюзная, дом 57, 5 этаж, офис 507</p>
-        <dl>
-          <dd><a href="tel:+74950250238">8 (495) 025-02-38</a></dd>
-          <dd><a href="mailto:info@stroymekhanizatsiya.ru">info@stroymekhanizatsiya.ru</a></dd>
-        </dl>
-        <dl>
-          <dd><span>Время работы:<br>
-            С понедельника по четверг с 09:00 до 18:00;<br>
-            в пятницу с 09:00 до 17:00.</span></dd>
-        </dl>
-      </address>
-    </li>
-  </ul>
+  <div class="contacts__overlay">
+
+  </div>
 </section>
-<section class="become-supplier">
+<section class="become-supplier" id="become">
   <div class="container">
-    <h2 class="heading-primary text-center">Стать поставщиком</h2>
+    <h2 class="heading-primary text-center heading-primary--white">Стать поставщиком</h2>
+    <div class="content-form">
+      <div class="content-form__form-wrapper">
+        <form action="#" class="content-form__form" id="sendformcontacts" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="content-form__form-wrapper-input">
+                <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="content-form__form-wrapper-input">
+                <input class="content-form__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="content-form__form-wrapper-input">
+                <input class="content-form__form-input" type="email" autocomplete="off" name="email" placeholder="Ваш email">
+              </div>
+            </div>
+          </div>
+          <div class="content-form__form-wrapper-textarea">
+            <textarea class="content-form__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
+          </div>
+          <div class="content-form__form-wrapper-file">
+            <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+            <label class="upload-file" for="file"><i class="fas fa-cloud-upload-alt upload-icon"></i><span>Прикрепить файл</span></label>
+          </div>
+          <div class="content-form__wrapper-checkbox">
+            <input id="chk" type="checkbox" class="js-policy" checked=""><label for="chk">Подтверждаю свое согласие на <a href="/soglasie-na-obrabotku-dannykh/">обработку</a> персональных данных</label>
+          </div>
+          <div class="content-form__form-wrapper-submit">
+            <button class="content-form__btn btn btn--big btn--stone" type="submit" name="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 <footer class="footer">

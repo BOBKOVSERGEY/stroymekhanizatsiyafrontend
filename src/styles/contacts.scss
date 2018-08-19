@@ -1,20 +1,68 @@
 .contacts {
   position: relative;
   overflow: hidden;
-  padding-top: 64px;
-  /*&__overlay {
-    background: rgba($color-blue-red, .85);
-    transform: skewX(-31deg);
+  &__overlay {
+    background: rgba(255,255,255, 1);
+    transform: skewX(-24deg);
     content: '';
     position: absolute;
     top: 0;
     width: 5000px;
     height: 100%;
     z-index: 2;
-    left: 66%;
-  }*/
+    left: 46%;
+  }
+  &__info {
+    font-family: $fontLight;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+    padding: 0 15px;
+    width: 100%;
+    & a {
+      color: $color-blue-red;
+      &:hover {
+        color: $color-dark-blue;
+      }
+    }
+  }
+  &__info-btn {
+    margin-top: 15px;
+    & a {
+      color: $color-white;
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
 }
 
+@media only screen and (max-width : 768px) {
+  .contacts {
+    &__heading {
+      margin-top: 64px;
+    }
+    &__order-two {
+      order: 1;
+    }
+    &__order-one {
+      order: 2;
+    }
+    &__overlay {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .contacts {
+    &__info {
+      font-size: 1.6rem;
+    }
+  }
+}
 .rd-google-map {
   color: #333;
   position: relative;

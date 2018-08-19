@@ -9,6 +9,17 @@
     letter-spacing: .8px;
 
   }
+  &--white {
+    color: $color-dark-blue;
+    background-color: $color-white;
+    border-color: $color-white;
+    transition: all .3s ease;
+    &:hover {
+      color: #fff;
+      background-color: $color-dark-blue;
+      border-color: $color-dark-blue;
+    }
+  }
   &--stone {
     color: #fff;
     background-color: $color-dark-blue;
@@ -18,6 +29,13 @@
       color: #fff;
       background-color: transparent;
       border-color: #fff;
+    }
+  }
+  &--hover-blue {
+    &:hover {
+      color: #fff;
+      background-color: $color-blue-red;
+      border-color: $color-blue-red;
     }
   }
 }

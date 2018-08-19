@@ -18,3 +18,12 @@
     color: $color-white;
   }
 }
+@media only screen and (max-width : 768px) {
+  .footer {
+    font-size: 1.1rem;
+    &__link-logo {
+      margin-left: .1px;
+      margin-top: 10px;
+    }
+  }
+}

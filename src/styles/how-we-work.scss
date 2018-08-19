@@ -79,7 +79,7 @@
 
 @media only screen and (max-width : 480px) {
   .how-we-work {
-
+    min-height: 500px;
     &__overlay {
       display: none;
     }
