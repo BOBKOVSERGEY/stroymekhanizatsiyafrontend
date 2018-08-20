@@ -1,0 +1,25 @@
+.modal-form {
+  font-size: 1.6rem;
+  padding: 45px 30px 30px 30px;
+  position: relative;
+  border-radius: 0;
+  border: 1px solid $color-blue-red;
+  background: $color-blue-red;
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: $color-white;
+    &:hover {
+      color: $color-white!important;
+    }
+  }
+  &__heading {
+    font-family: $fontBold;
+    text-align: center;
+    font-size: 32px;
+    color: $color-white;
+    margin-bottom: 30px;
+  }
+}

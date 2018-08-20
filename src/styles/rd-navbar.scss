@@ -918,7 +918,7 @@
 .rd-navbar-static.rd-navbar--is-stuck, .rd-navbar-static.rd-navbar--is-clone, .rd-navbar-fullwidth.rd-navbar--is-stuck, .rd-navbar-fullwidth.rd-navbar--is-clone {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 70px;
   right: 0;
   z-index: 999;
   background: #fff;
@@ -929,7 +929,7 @@
 }
 
 .rd-navbar-static.rd-navbar--is-stuck .rd-navbar-collapse, .rd-navbar-static.rd-navbar--is-clone .rd-navbar-collapse, .rd-navbar-fullwidth.rd-navbar--is-stuck .rd-navbar-collapse, .rd-navbar-fullwidth.rd-navbar--is-clone .rd-navbar-collapse {
-  display: none;
+  //display: none;
 }
 
 .rd-navbar-static .rd-navbar-dropdown,
@@ -1282,12 +1282,22 @@
 .rd-navbar-static .rd-navbar-collapse {
   position: absolute;
   right: 0;
-  top: -15px;
+  top: -10px;
   margin-bottom: 0;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
+  padding: 5px 15px;
+  transition: all .5s;
 }
 
+.rd-navbar-background-top {
+  background: rgba(36,90,122,.85);
+}
+@media only screen and (max-width : 992px) {
+  .rd-navbar-background-top {
+    background: rgba(36,90,122,.0);
+  }
+}
 .rd-navbar-static .rd-navbar-collapse li {
   display: inline-block;
   margin-left: 15px;

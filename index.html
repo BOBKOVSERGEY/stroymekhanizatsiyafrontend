@@ -26,6 +26,9 @@
               <i class="fas fa-map-marker-alt header__address-icon"></i>
               <span>Москва, ул. Профсоюзная, дом 57, офис 507</span>
             </div>
+            <div class="header__btn">
+              <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn--top btn--stone btn-top-opacity"><span>Заказать перевозку</span></a>
+            </div>
               <a href="tel:+74950250238" class="header__phone">
                 <i class="fas fa-phone header__phone-icon"></i> <span class="header__phone-text">+7 <span>495</span> 025-02-38</span>
               </a>
@@ -101,7 +104,7 @@
                 <h2 class="slider__heading">Фиксированная стоимость</h2>
                 <p class="slider__description">Фиксированная цена на перевозки, вы платите только за факт доставки груза между двумя точками.</p>
                 <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
-                  <a href="#" class="btn btn--big btn--stone">Запросить цену</a>
+                  <a href="#" class="btn btn--big btn--stone">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -476,6 +479,60 @@
     </div>
   </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content modal-form">
+      <button type="button" class="close modal-form__close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h2 class="modal-form__heading">Заявка на перевозку</h2>
+      <form action="">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="content-form__form-wrapper-input">
+              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-form__form-wrapper-input">
+              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-form__form-wrapper-input">
+              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="content-form__form-wrapper-input">
+              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-form__form-wrapper-input">
+              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-form__form-wrapper-input">
+              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-form__form-wrapper-textarea">
+              <textarea class="content-form__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <script src="dist/js/lib.js"></script>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyAbF547wmpRHA68yKJP62H7yha2Nzsilm8&language=ru"></script>
 <script src="dist/js/main.js"></script>

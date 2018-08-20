@@ -9,6 +9,21 @@
     letter-spacing: .8px;
 
   }
+  &--top {
+    font-family: $fontBold;
+    padding: 5px 17px;
+    font-size: 14px;
+    border-radius: 0;
+    border-width: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: skew(-45deg);
+    letter-spacing: .8px;
+    & span {
+      display: inline-block;
+      transform: skew(45deg);
+    }
+  }
   &--white {
     color: $color-dark-blue;
     background-color: $color-white;
@@ -36,6 +51,18 @@
       color: #fff;
       background-color: $color-blue-red;
       border-color: $color-blue-red;
+    }
+  }
+}
+.btn-top-opacity {
+  opacity: 0;
+  transition: all .3s;
+}
+
+@media only screen and (max-width : 992px) {
+  .btn {
+    &--top {
+      display: none;
     }
   }
 }

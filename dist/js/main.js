@@ -72,7 +72,7 @@ $(function () {
   if (plugins.navbar.length) {
     plugins.navbar.RDNavbar({
       stickUpClone: false,
-      stickUpOffset: 30
+      stickUpOffset: 0.1
     });
   }
 
@@ -203,7 +203,17 @@ $(function () {
     }
   });
 
-
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var vheight = $(".swiper-container").height();
+    if (scroll >= vheight) {
+      $('.rd-navbar-static .rd-navbar-collapse').addClass('rd-navbar-background-top');
+      $('.btn--top').removeClass('btn-top-opacity');
+    } else {
+      $('.rd-navbar-static .rd-navbar-collapse').removeClass('rd-navbar-background-top');
+      $('.btn--top').addClass('btn-top-opacity');
+    }
+  });
 
 })
 

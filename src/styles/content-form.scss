@@ -1,4 +1,5 @@
 .content-form {
+  font-family: $fontRegular;
 
   &__form-wrapper-input {
     margin-bottom: 30px;
@@ -9,6 +10,7 @@
     position: relative;
   }
   &__form-input {
+    font-family: $fontRegular;
     display: block;
     width: 100%;
     margin: 0;
@@ -28,6 +30,7 @@
     }
   }
   &__form-textarea {
+    font-family: $fontRegular;
     display: block;
     width: 100%;
     margin: 0;
@@ -51,15 +54,19 @@
     transition: .3s all ease;
     height: 60px;
     &::-webkit-input-placeholder {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &::-moz-placeholder {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &:-ms-input-placeholder {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &:placeholder-shown {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &:focus {
@@ -71,15 +78,19 @@
     transition: .3s all ease;
     height: 250px;
     &::-webkit-input-placeholder {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &::-moz-placeholder {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &:-ms-input-placeholder {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &:placeholder-shown {
+      font-family: $fontRegular;
       color: $color-dark;
     }
     &:focus {
@@ -88,6 +99,7 @@
     }
   }
   &__wrapper-checkbox {
+    font-family: $fontRegular;
     position: relative;
     margin: 15px 0 30px 0;
     text-align: left;
@@ -133,6 +145,7 @@
   color: $color-dark;
   padding-left: 45px;
   font-size: 14px;
+  font-family: $fontRegular;
 }
 .content-form input[type="checkbox"] + label:before {
   content: '';
@@ -176,6 +189,7 @@
 }
 .content-form input[type="checkbox"]:checked + label{
   color: $color-white;
+  font-family: $fontRegular;
 }
 
 .content-form input[type="checkbox"]:checked + label:after {
@@ -190,6 +204,7 @@
 
 
 .upload-file {
+  font-family: $fontRegular;
   color: $color-white;
   margin: 5px 0 25px 0;
   display: flex;
@@ -209,7 +224,7 @@
 
 }
 .upload-file:hover {
-  color: lighten($color-dark-blue, 10%);
+  opacity: .85;
 }
 .hide-type-file {
   position: absolute;

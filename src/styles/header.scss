@@ -59,22 +59,27 @@
     width: 70px;
     margin-right: 10px;
   }
+
   &__text {
+    font-family: 'impactreg';
+    font-size: 27px;
+    /*
     font-family: $fontBold;
-    font-size: 20px;
+    font-size: 20px;*/
   }
   & span {
-    color: $color-blue-red;
+    color: $colorRed;
   }
 }
 
-@media only screen and (max-width : 1150px) {
+
+@media only screen and (max-width : 1050px) {
   .logo {
     &__img {
       width: 50px;
     }
     &__text {
-      font-size: 14px;
+      font-size: 20px;
     }
   }
 }
@@ -103,7 +108,7 @@
   }
   .logo {
     &__text {
-      font-size: 15px;
+      font-size: 20px;
     }
   }
 }
