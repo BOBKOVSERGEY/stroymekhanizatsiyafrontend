@@ -424,13 +424,14 @@
 <section class="become-supplier" id="become">
   <div class="container">
     <h2 class="heading-primary text-center heading-primary--white">Стать поставщиком</h2>
+    <div class="content-form__answer"></div>
     <div class="content-form">
       <div class="content-form__form-wrapper">
-        <form action="#" class="content-form__form" id="sendformcontacts" method="post" enctype="multipart/form-data">
+        <form action="#" class="content-form__form" id="sendFormBecome" method="post" enctype="multipart/form-data">
           <div class="row">
             <div class="col-md-4">
               <div class="content-form__form-wrapper-input">
-                <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+                <input class="content-form__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
               </div>
             </div>
             <div class="col-md-4">
@@ -449,7 +450,7 @@
           </div>
           <div class="content-form__form-wrapper-file">
             <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
-            <label class="upload-file" for="file"><i class="fas fa-cloud-upload-alt upload-icon"></i><span>Прикрепить файл</span></label>
+            <label class="upload-file" for="file"><i class="fas fa-cloud-upload-alt upload-icon"></i><span class="upload-text-reset">Прикрепить файл</span></label>
           </div>
           <div class="content-form__wrapper-checkbox">
             <input id="chk" type="checkbox" class="js-policy" checked=""><label for="chk">Подтверждаю свое согласие на <a href="/soglasie-na-obrabotku-dannykh/">обработку</a> персональных данных</label>
@@ -487,7 +488,8 @@
         <span aria-hidden="true">&times;</span>
       </button>
       <h2 class="modal-form__heading">Заявка на перевозку</h2>
-      <form action="#" class="modal-form__form" id="sendformmodal" method="post" enctype="multipart/form-data">
+      <div class="modal-form__answer"></div>
+      <form action="#" class="modal-form__form" id="sendFormModal" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="col-lg-4">
             <div class="modal-form__form-wrapper-input">
@@ -529,7 +531,7 @@
             </div>
             <div class="content-form__form-wrapper-file">
               <input type="file" id="modalfile" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
-              <label class="upload-file" for="modalfile"><i class="fas fa-cloud-upload-alt upload-icon"></i><span>Прикрепить файл</span></label>
+              <label class="upload-file" for="modalfile"><i class="fas fa-cloud-upload-alt upload-icon"></i><span class="upload-text-reset-modal">Прикрепить файл</span></label>
             </div>
             <div class="content-form__wrapper-checkbox">
               <input id="modalchk" type="checkbox" class="js-policy-modal" checked=""><label for="modalchk">Подтверждаю свое согласие на <a href="/soglasie-na-obrabotku-dannykh/">обработку</a> персональных данных</label>

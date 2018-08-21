@@ -87,6 +87,8 @@
 @media only screen and (max-width : 992px) {
   .logo {
     color: $color-white;
+    position: relative;
+    top: 2px;
     &__img {
       display: none;
     }

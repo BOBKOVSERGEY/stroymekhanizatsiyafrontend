@@ -155,7 +155,11 @@
     font-size: 11px;
     color: #a94442;;
   }
-
+  &__form-tanks {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+  }
 }
 .modal-form input[type="checkbox"] + label {
   position: relative;

@@ -200,6 +200,26 @@ $(function () {
 
   /*validate contacts-form__form*/
   $('.content-form__form').validate({
+    submitHandler: function(form){
+      var form = document.forms.sendFormBecome,
+        formData = new FormData(form),
+        xhr = new XMLHttpRequest();
+
+      xhr.open("POST", "/sendbecome.php");
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          if(xhr.status == 200) {
+            $("#sendFormBecome")[0].reset();
+            $('.upload-text-reset').text('Прикрепить файл');
+            $(".content-form__answer").html('<div class="content-form__form-tanks wow flipInX">Заявка успешно отправлена!<div>');
+          } else {
+            $(".content-form__answer").html('<div class="content-form__form-tanks">Что то пошло не так<div>');
+          }
+        }
+      };
+      xhr.send(formData);
+    },
     rules: {
       name: {
         required: true,
@@ -221,8 +241,28 @@ $(function () {
     }
   });
 
-  /*validate contacts-form__form*/
+  /*validate modal-form__form*/
   $('.modal-form__form').validate({
+    submitHandler: function(form){
+      var form = document.forms.sendFormModal,
+        formData = new FormData(form),
+        xhr = new XMLHttpRequest();
+
+      xhr.open("POST", "/sendpopup.php");
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          if(xhr.status == 200) {
+            $("#sendFormModal")[0].reset();
+            $('.upload-text-reset-modal').text('Прикрепить файл');
+            $(".modal-form__answer").html('<div class="modal-form__form-tanks wow flipInX">Заявка успешно отправлена!<div>');
+          } else {
+            $(".modal-form__answer").html('<div class="modal-form__form-tanks">Что то пошло не так<div>');
+          }
+        }
+      };
+      xhr.send(formData);
+    },
     rules: {
       name: {
         required: true,
