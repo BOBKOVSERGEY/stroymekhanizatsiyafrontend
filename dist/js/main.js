@@ -180,8 +180,49 @@ $(function () {
     }
   };
 
+  /*** policy ***/
+  $('.js-policy-modal').on('click', function($el){
+    checkPolicyModal();
+  });
+  /*** end policy ***/
+  function checkPolicyModal () {
+    if ($(".js-policy-modal").is(':checked')) {
+      $("[type=submit]").prop('disabled', false);
+    } else {
+      $("[type=submit]").prop('disabled', true);
+    }
+  };
+
+  $('.btn-get-bid').on('click', function (e) {
+    e.preventDefault();
+    $('#modalBid').modal();
+  });
+
   /*validate contacts-form__form*/
   $('.content-form__form').validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      }
+
+    },
+    messages: {
+      name: {
+        required: "Введите Ваше имя"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес"
+      }
+    }
+  });
+
+  /*validate contacts-form__form*/
+  $('.modal-form__form').validate({
     rules: {
       name: {
         required: true,

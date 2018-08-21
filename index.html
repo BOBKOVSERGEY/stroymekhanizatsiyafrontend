@@ -27,7 +27,7 @@
               <span>Москва, ул. Профсоюзная, дом 57, офис 507</span>
             </div>
             <div class="header__btn">
-              <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn--top btn--stone btn-top-opacity"><span>Заказать перевозку</span></a>
+              <a href="#" data-toggle="modal" data-target="#modalBid" class="btn btn--top btn--stone btn-top-opacity"><span>Заказать перевозку</span></a>
             </div>
               <a href="tel:+74950250238" class="header__phone">
                 <i class="fas fa-phone header__phone-icon"></i> <span class="header__phone-text">+7 <span>495</span> 025-02-38</span>
@@ -88,7 +88,7 @@
                 <h2 class="slider__heading">Грузоперевозки фурами по России</h2>
                 <p class="slider__description">Закажите грузоперевозку фурой 20 тонн в надежной компании по экономным ценам. Доставка различных грузов и продукции большегрузами выполняется по всей России.</p>
                 <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
-                  <a href="#" class="btn btn--big btn--stone">Оставить заявку</a>
+                  <a href="#" class="btn btn--big btn--stone btn-get-bid">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@
                 <h2 class="slider__heading">Фиксированная стоимость</h2>
                 <p class="slider__description">Фиксированная цена на перевозки, вы платите только за факт доставки груза между двумя точками.</p>
                 <div class="slider__btn" data-swiper-animation="slideInUp" data-delay=".3s">
-                  <a href="#" class="btn btn--big btn--stone">Оставить заявку</a>
+                  <a href="#" class="btn btn--big btn--stone btn-get-bid">Оставить заявку</a>
                 </div>
               </div>
             </div>
@@ -480,52 +480,62 @@
   </div>
 </footer>
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="modalBid" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content modal-form">
       <button type="button" class="close modal-form__close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
       <h2 class="modal-form__heading">Заявка на перевозку</h2>
-      <form action="">
+      <form action="#" class="modal-form__form" id="sendformmodal" method="post" enctype="multipart/form-data">
         <div class="row">
-          <div class="col-md-4">
-            <div class="content-form__form-wrapper-input">
-              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+          <div class="col-lg-4">
+            <div class="modal-form__form-wrapper-input">
+              <input class="modal-form__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="content-form__form-wrapper-input">
-              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+          <div class="col-lg-4">
+            <div class="modal-form__form-wrapper-input">
+              <input class="modal-form__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="content-form__form-wrapper-input">
-              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+          <div class="col-lg-4">
+            <div class="modal-form__form-wrapper-input">
+              <input class="modal-form__form-input" type="text" autocomplete="off" name="email" placeholder="Ваш email">
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="content-form__form-wrapper-input">
-              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+          <div class="col-lg-4">
+            <div class="modal-form__form-wrapper-input">
+              <input class="modal-form__form-input" type="text" autocomplete="off" name="departure" placeholder="Отправление">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="content-form__form-wrapper-input">
-              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+          <div class="col-lg-4">
+            <div class="modal-form__form-wrapper-input">
+              <input class="modal-form__form-input" type="text" autocomplete="off" name="destination" placeholder="Назначение">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="content-form__form-wrapper-input">
-              <input class="content-form__form-input" type="text" autocomplete="" name="name" placeholder="Ваше имя">
+          <div class="col-lg-4">
+            <div class="modal-form__form-wrapper-input">
+              <input class="modal-form__form-input" type="text" autocomplete="off" name="amount" placeholder="Объем">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="content-form__form-wrapper-textarea">
-              <textarea class="content-form__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
+            <div class="modal-form__form-wrapper-textarea">
+              <textarea class="modal-form__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
+            </div>
+            <div class="content-form__form-wrapper-file">
+              <input type="file" id="modalfile" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+              <label class="upload-file" for="modalfile"><i class="fas fa-cloud-upload-alt upload-icon"></i><span>Прикрепить файл</span></label>
+            </div>
+            <div class="content-form__wrapper-checkbox">
+              <input id="modalchk" type="checkbox" class="js-policy-modal" checked=""><label for="modalchk">Подтверждаю свое согласие на <a href="/soglasie-na-obrabotku-dannykh/">обработку</a> персональных данных</label>
+            </div>
+            <div class="content-form__form-wrapper-submit">
+              <button class="content-form__btn btn btn--big btn--stone" type="submit" name="submit">Отправить</button>
             </div>
           </div>
         </div>
