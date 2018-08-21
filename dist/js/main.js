@@ -255,7 +255,7 @@ $(function () {
           if(xhr.status == 200) {
             $("#sendFormModal")[0].reset();
             $('.upload-text-reset-modal').text('Прикрепить файл');
-            $(".modal-form__answer").html('<div class="modal-form__form-tanks wow flipInX">Заявка успешно отправлена!<div>');
+            $(".modal-form__answer").html('<div class="modal-form__form-tanks">Заявка успешно отправлена!<div>');
           } else {
             $(".modal-form__answer").html('<div class="modal-form__form-tanks">Что то пошло не так<div>');
           }

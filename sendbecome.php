@@ -53,7 +53,7 @@ if (isset($_POST["submit"])) {
   $mail->FromName  = $_POST['user'];
 
 // кому отправляем
-  $mail->addAddress('sergey_bobkov@inbox.ru', 'Сергей');
+  $mail->addAddress('info@stroymekhanizatsiya.ru', 'СТРОЙМЕХАНИЗАЦИЯ');
   //$mail->addAddress('mister-shcustrik@yandex.ru');
 
 // копия

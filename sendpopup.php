@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
   move_uploaded_file($_FILES['attachment']['tmp_name'], $path);
 
   // формируем шаблон
-  $message = '<h3 align="center">Заявка стать поставщиком</h3>
+  $message = '<h3 align="center">Заявка на перевозку</h3>
 		<table border="1" width="100%" cellpadding="5" cellspacing="5">
 		<tr>
 				<td width="30%">Имя</td>
@@ -34,7 +34,7 @@ if (isset($_POST["submit"])) {
 				<td width="70%">'. $_POST["destination"] .'</td>
 			</tr>
 			<tr>
-				<td width="30%">Объем</td>
+				<td width="30%">Объем, вес</td>
 				<td width="70%">'. $_POST["amount"] .'</td>
 			</tr>
 			<tr>
@@ -65,7 +65,7 @@ if (isset($_POST["submit"])) {
   $mail->FromName  = $_POST['user'];
 
 // кому отправляем
-  $mail->addAddress('sergey_bobkov@inbox.ru', 'Сергей');
+  $mail->addAddress('info@stroymekhanizatsiya.ru', 'СТРОЙМЕХАНИЗАЦИЯ');
   //$mail->addAddress('mister-shcustrik@yandex.ru');
 
 // копия
